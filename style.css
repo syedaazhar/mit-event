@@ -1,0 +1,249 @@
+/* full-page container  */
+.container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+ 
+/* banner styling */
+#banner-img{
+    min-width:100%;
+}
+.container div.wrapper{
+    width:74%;
+    margin-top: 15px;
+}
+
+/* navbar styling */
+nav{
+    width: 74%;
+    border-bottom: 2px solid #e6455f;
+}
+
+.event-name{
+    margin-bottom: 5px;
+    padding: 20px 2px 0px;
+    font-size: 18px;
+}
+
+.inner-wrapper .top-content-area .left-content{
+    width:71%;
+}
+
+.inner-wrapper .top-content-area .right-content{
+    width:29%;
+}
+
+.wrapper {
+    background: #fff;    
+    }
+    .w100 {
+    width: 100%;
+    }
+    .banner-upcoming {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    }
+    .banner-reserve {
+    margin-top: 30px;
+    margin-bottom: 75px;
+    }
+    .inner-wrapper {
+    padding: 0 15px;
+    }
+
+    .inner-wrapper .agenda {margin-bottom: 20px;}
+    .inner-wrapper .speaker-lists li {
+    width: 48% !important;
+    }
+    .event-details .inner-wrapper p {
+    padding: 15px 0;
+    color: ;
+    }
+    .event-details .inner-wrapper h3 {
+    display: block;
+    font-size: 1.17em;
+    background-color: transparent;
+    color: #4f4e4c;
+    text-transform: capitalize;
+    padding: 0;
+    margin-top: 0;
+    line-height: inherit;
+    }
+    .event-details .inner-wrapper ul {
+    -webkit-padding-start: 25px
+    }
+    .wrapper {
+    width: 100%;
+    }
+    .series,
+    .unseries,
+    .series-single {
+    padding: 25px 30px 30px 30px !important;
+    background-color: #eaeaea;
+    background-image: url('http://northerncalifornia.alumclub.mit.edu/s/1314/images/gid25/editor/spotlight_2018/series-badge.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position-x: 95%;
+    }
+    .series p,
+    .unseries p {
+    font-size: 14px;
+    color: #333132;
+    }
+    .series p strong,
+    .unseries p strong {
+    font-size: 15px;
+    }
+    .series-single {
+    padding-top: 0 !important;
+    }
+    .unseries {
+    background: none;
+    padding-top: 0 !important;
+    }
+    .border_red_bottom {
+    border-bottom: 3px solid #a31e37;
+    }
+    .pt0 {
+    padding-top: 0 !important;
+    }
+    .p0 {
+    padding: 0 !important;
+    }
+    .calendar-list {
+    margin: 0 !important;
+    }
+    .calendar-list li {
+    padding-top: 30px !important;
+    padding-bottom: 0 !important;
+    }
+    .the-date {
+    text-align: left !important;
+    height: auto !important;
+    color: #333132;
+    }
+    .inner-wrapper .upcoming .calendar-list li .the-event {
+    padding-bottom: 0 !important;
+    width: 79% !important;
+    border-bottom: none !important;
+    margin-left: 0 !important;
+    }
+    .inner-wrapper .upcoming .calendar-list li .the-event a,
+    .inner-wrapper .upcoming .calendar-list li .the-event a:visited {
+    color: #a31e37 !important;
+    font-size: 18px;
+    font-weight: bold !important;
+    }
+    .inner-wrapper .upcoming .calendar-list li .the-event a:hover {
+    text-decoration: underline;
+    color: #333132 !important;
+    }
+    .inner-wrapper .upcoming .calendar-list li .the-event a span,
+    .inner-wrapper .upcoming .calendar-list li .the-event a:visited span {
+    font-size: 15px;
+    display: block;
+    font-weight: bold !important;
+    color: #333132 !important;
+    }
+    .inner-wrapper .upcoming .calendar-list li .the-event p {
+    color: #262626;
+    }
+    .wrapper .inner-wrapper .event-title-box h2:after {
+    background: transparent !important;
+    }
+    .wrapper .banner .banner-left {
+    position: relative;
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 30px;
+    background-size: contain;
+    padding-bottom: 0px;
+    display: -webkit-inline-box;
+    background-image: url("https://adminlb.imodules.com/s/1314/images/gid25/editor/newsletter/connectivity-sharing-transportation-mit.png");
+    background-size: contain;
+    }
+    .wrapper {
+    width: 100%;
+    }
+    .wrapper .red-footer ul li h5 {
+        color: #ffb400;
+    }
+    .speakers .speakers-content .p-col {
+    min-height: 245px;
+    }
+    @media(max-width: 675px) {
+    .inner-wrapper .upcoming .calendar-list li .the-date {
+    width: auto;
+    }
+    .reg-buttons .alums-container .alums {
+    min-height: 155px!important;
+    }
+    .reg-buttons .alums-container .alums.red a, .reg-buttons .alums-container .alums.gray a {
+    margin-bottom: 0;
+    }
+    .reg-buttons .alums-container .alums.red br{
+    display: none;
+    }
+    }
+    @media(max-width: 420px) {
+    .series,
+    .unseries,
+    .series-single {
+    padding: 25px 15px 30px 15px;
+    }
+    }
+    .agenda-box
+    {padding-top:20px; padding-bottom:20px; background-color:#f5f5f5;}
+    .agenda-row {
+    display:inline-block;margin-left:40px; padding-left:20px;border-left:2px solid #b7b7b7;}
+    .agenda-row span { color: #a41f35; display: block; font-weight: bold; }
+    #text {
+    color:#5b5b5b;font-family:arial;line-height:1.6;
+    }
+    hr {
+    color:#a41f35;
+    }
+
+    hr.spacer {
+        margin-bottom: 16px;
+    }
+    #mit-club
+    {
+    color:black; font-family:arial; line-height:1.6;}
+    .red-box
+    {
+    background:#a41f35;padding:10px; margin-top: 16px;}
+    .red-box p
+    {color:white;padding:10px 10px 10px 10px;border-left:1px solid white;border-right:1px solid white; border-top:1px solid white; border-bottom:1px solid white;font-size:16px; font-family:arial;}
+    .reg-buttons .alums-container .alums .digits {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 0 10px 0;
+    float: left;
+    margin: 0px 0 25px 0;
+    width: 100%;
+    }
+    p.profile
+    {font-size:26px;color:#e16545;padding-left:15px;}
+    p.profile img
+    {float:left;overflow:hidden;padding:5px;}
+    p.profile span
+    {
+    color:999393
+    }
+    p.profile strong
+    {font-size:19px;
+    color:black
+    }
+    p.profile small
+    {color:black;font-size:14px;}
+    p.profile cite
+    {font-sze:14px;color:black;
+    }
+    .wrapper .banner .banner-left
+    {padding:0px 0px 0px 0px;
+    }
