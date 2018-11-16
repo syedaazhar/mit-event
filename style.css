@@ -1,9 +1,6 @@
 /* full-page container  */
 .container{
     width:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center
 }
  
 /* banner styling */
@@ -11,14 +8,18 @@
     min-width:100%;
 }
 .container div.wrapper{
-    width:74%;
+    width: 100%;
     margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* navbar styling */
 nav{
     width: 74%;
     border-bottom: 2px solid #e6455f;
+    margin: 0 auto;
 }
 
 .event-name{
@@ -27,12 +28,105 @@ nav{
     font-size: 18px;
 }
 
-.inner-wrapper .top-content-area .left-content{
-    width:71%;
+.clearfix {
+    min-width: 70%;
 }
+/* reservation button styling */
+.green-btn{
+    width: 200px;
+    text-align: center;
+}
+
+/* speakers section */
+
+.speakers-section{
+    width: 63%;
+    text-align: center;
+    height: 51px;
+    border-bottom: 2px solid #e6455f;
+    margin-bottom: 14px;
+}
+
+.Speakers-list{
+    font-size: 35px;
+}
+
+.grid-container
+{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 300px 300px;
+    grid-gap: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+.grid-container > div
+{
+    text-align: center;
+    font-size: 30px;
+    height: 329px;
+    /* margin: 0 auto; */
+    width: 100%;
+}
+
+.Speakers:hover{
+    -webkit-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.75);
+   
+}
+
+.Speakers{
+    background-position: center;
+    background-size: cover;
+    width:200px;
+    height:200px;
+    border-radius: 1000px;
+    margin: 16px auto;
+    border-top-right-radius: 700px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#spaeker-1{
+    background-image: url('jessicaheadshot.jpeg');
+}
+
+#spaeker-2{
+    background-image: url('juliaheadshot.jpeg');
+}
+
+#spaeker-3{
+    background-image: url('mahimaheadshot.jpg');
+}
+
+#spaeker-4{
+    background-image: url('stephenheadshot.jpg');
+}
+
+.spekers-profile{
+    margin-top: 1em;
+}
+
+.speaker-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.qualification{
+    font-size: 15px;
+}
+
+/* end */
+
 
 .inner-wrapper .top-content-area .right-content{
     width:29%;
+}
+
+.inner-wrapper .top-content-area .left-content{
+    min-width:68%;
 }
 
 .wrapper {
@@ -51,6 +145,7 @@ nav{
     }
     .inner-wrapper {
     padding: 0 15px;
+    width: 70%;
     }
 
     .inner-wrapper .agenda {margin-bottom: 20px;}
@@ -174,20 +269,68 @@ nav{
     .speakers .speakers-content .p-col {
     min-height: 245px;
     }
+    .speakers {
+        width: 70%;
+    }
+
+    @media(max-width:767px){
+        .inner-wrapper .top-content-area .right-content{
+            width: 37%;
+            text-align: start;
+        }
+        .grid-container{
+            grid-template-columns: auto;
+        }
+        .reg .reg-buttons .alums-container{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .inner-wrapper, nav{
+            width:100%;
+        }
+        
+    }
+
     @media(max-width: 675px) {
-    .inner-wrapper .upcoming .calendar-list li .the-date {
-    width: auto;
+        .inner-wrapper .upcoming .calendar-list li .the-date {
+        width: auto;
+        }
+        .reg-buttons .alums-container .alums {
+        min-height: 155px!important;
+        }
+        .reg-buttons .alums-container .alums.red a, .reg-buttons .alums-container .alums.gray a {
+        margin-bottom: 0;
+        }
+        .reg-buttons .alums-container .alums.red br{
+        display: none;
+        }
+        /* .regard, .contact{
+            text-align: start;
+        } */
+        .inner-wrapper .top-content-area .right-content .green-btn{
+            width: 200px;
+           } 
     }
-    .reg-buttons .alums-container .alums {
-    min-height: 155px!important;
+
+
+    @media(max-width:600px){
+        .inner-wrapper, .speakers{
+            width: 93%;
+       }
+       nav{
+           width:92%;
+       }
+       .inner-wrapper .top-content-area .right-content{
+        width: 40% ;
+       }
+       /* .inner-wrapper .top-content-area .right-content .green-btn{
+        padding: 17px 55px 17px;
+       } */
+       .regard, .contact{
+           text-align: start;
+       }
     }
-    .reg-buttons .alums-container .alums.red a, .reg-buttons .alums-container .alums.gray a {
-    margin-bottom: 0;
-    }
-    .reg-buttons .alums-container .alums.red br{
-    display: none;
-    }
-    }
+   
     @media(max-width: 420px) {
     .series,
     .unseries,
